@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+.oswald {
+    font-family: 'Oswald', sans-serif;
+} .bold {
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box; 
+
+} 
+:root {
+    --biru: #244760;
+    --abu: #e8e0e8;
+    --hijau: #606551;
+}
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('human.webp');
+    background-size: cover;
+} header {
+    background: #fbfbf5;
+    position: relative;
+    z-index: 9;
+} .icon-card {
+    width: 70px;
+} .hero2 {
+    background-image: url('hero2.webp');
+    background-size: cover;   
+} .hero2-box {
+    display: flex;
+} .hero2-box .col-md-3 {
+    align-self: end;
+} .tombol {
+    padding: 0 15px;
+    background-color: white;
+    color:var(--biru);
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+} .rock-icon {
+    width: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+p,h1,h2, a {
+    color:var(--biru);
+} body {
+    font-family: calibri;
+    overflow-x: hidden;
+} .banner {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+} .box {
+    position: absolute;
+    /* top: 70px;
+    left: 50px; */
+
+    top: 150px;
+    left: 100px;
+    
+
+}
+
+.top-banner {
+    width: 100vw;
+} 
+.banner .row h1,
+.banner .row h5 {
+    font-weight: bold;
+} 
+
+/* Header */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} .nav-link {
+    font-weight: bold;
+}
+/*  */
+.logo img {width: 50px;}
+ul.navbar-nav { 
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+} ul.navbar-nav input {
+    border-radius: 50px;
+    border: unset;
+    box-shadow: inset 3px 3px 3px #eee;
+    padding: 0 10px;
+}
+
+.nav-link.active {
+    border-bottom: 1px solid var(--biru);
+} 
+.rockclimb .card {
+    text-align: center;
+}
+.rockclimb .card a.tombol {
+    background-color: var(--hijau);
+    color:white;
+}
+.rockclimb .card h5
+.rockclimb .card p {
+    color:var(--hijau);
+    font-weight: bold;
+}
+
+.bottom-hero {
+    height: 600px;
+    background-image: url('bottomhero.webp');   
+    background-size: cover;
+} .parent-box {
+    display: flex;
+    justify-content: space-between;
+} .parent-box .mybox:first-child {
+    flex: 2;
+} .parent-box .mybox:last-child {
+    flex: 1;
+}
+
+.bottom-banner {
+    position: absolute;
+} .bottom-banner img {
+    width: 100vw;
+    height: 500px;
+    transform: translate(0,-40px);
+} .bottom-banner .container-fluid {
+    position: absolute;
+    top: 0;
+} .green-banner {
+    background-image: url('green.webp');
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+} .green-banner hr {
+    height: 5px;
+    background-color: white;
+    width: 40px;
+    display: inline-block;
+} 
+
+.last-banner {
+    height: 300px;
+    background-image: url('finishbanner.webp');
+    background-size: cover;
+    background-position: 0 -100px;
+    display: flex;
+    align-items: center;
+} .last-banner::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background-color: rgba(0, 86, 120, 0.704);
+} .last-banner img {
+    width: 100px;
+    height:100px;
+} .last-banner .container-fluid {
+    position: relative;
+    z-index: 99;
+} .last-banner img {
+    filter: brightness(0) invert(1);
+} .list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+} .list a {
+    text-decoration: unset;
+} .rockclimb {
+    background-color: #fbfbf5;
+}
+
+.footer-logo img {
+    width: 50px;
+    height: 50px;
+} .footer-logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+} .footer-logo p {
+    align-self: center;
+} .mybox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    gap: 0px;
+}
+
+@media screen and (max-width: 1000px) {
+    .box {
+        top: 100px;
+        left: 80px;
+    }
+    .green-banner {
+        justify-content: center;
+        text-align: center;
+    } .green-banner hr {
+        margin: auto;
+    } 
+    ul.navbar-nav { 
+        text-align: center;
+        background-color: #fbfbf5;
+        padding-bottom: 20px;
+    }  .top-banner {
+        margin-top: 60px;
+        height:300px;
+    }
+
+    .rockclimb .card {
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 683px) {
+    
+    .green-banner {
+        justify-content: center;
+        text-align: center;
+    } .green-banner hr {
+        margin: auto;
+    } .footer1 {
+        text-align: center;
+    } .footer-logo {
+        justify-content: center;
+    } footer .col-md-4 .row {
+        text-align: center;
+    } footer .col-md-4 .row .col-md-3 {
+        margin-top: 20px;
+    }
+    .hero2-box .col-md-9 {
+        text-align: center;
+    } .rockclimb .row {
+        text-align: center;
+    } .parent-box .mybox:first-child {
+        flex: 1;
+    } .bottom-hero {
+        background-position: -100px 0;
+    } .mybox {
+        flex-direction: column;
+        gap: unset;
+    } .mybox p {
+        font-size: 0.8rem;
+    } .mybox h4 {
+        font-size: 0.9rem;
+    } .mybox h5 {
+        font-size: 1.1rem;
+    } .mybox h6 {
+        font-size: 1greenrem;
+    } .hero {
+        background-position: 30px 0;
+    } .box {
+        top: 80px;
+        left: 60px;
+    }
+}
+
+
+
+
+@media screen and (max-width:500px) {
+    .hero {
+        background-position: 0px 0;
+        
+    } .top-banner {
+        display: none;
+    } .box {
+        text-align: center;
+        width: 200px;
+        margin-top: 50px;
+    } .box h1 {
+        font-size: 1.5rem;
+    } .box h5 {
+        font-size: 1rem;
+    } .mybox {
+        flex-direction: column;
+        gap: unset;
+    } .mybox p {
+        font-size: 0.8rem;
+    } .mybox h4 {
+        font-size: 0.9rem;
+    } .mybox h5 {
+        font-size: 1.1rem;
+    } .mybox h6 {
+        font-size: 1greenrem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .hero {
+        background-position: -600px 0;
+    }
+
+}
